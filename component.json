@@ -1,0 +1,17 @@
+{
+  "name": "callback",
+  "main": "index.scss",
+  "version": "0.1.0",
+  "dependencies": {
+    "nib-styles-common": "*"
+  },
+  "styles": ["index.scss"],
+  "files": [
+    "bg-rounded-square-pointer.png",
+    "bg-rounded-square-pointer@2x.png",
+    "icon-tick-circle-large-blue.png",
+    "phi-banner.jpg",
+    "phi-banner@2x.jpg",
+    "white-80.png"
+  ]
+}
