@@ -169,33 +169,44 @@
 
 .callout-7 {
   @include border-box;
-  width: 940px;
   display: block;
-  position: relative;
   margin: 0 auto;
+  position: relative;
 
   &.callout--phi {
     @include retina-background-image(callout-image-path('phi-banner'), 'jpg', auto, 400px);
     height: 400px;
+
+    @media (max-width: 640px){
+      @include retina-background-image(callout-image-path('phi-banner-640'), 'jpg', auto, 400px);
+    }
+
+    @media (max-width: 480px){
+      background-image: none !important;
+      height: 320px;
+    }
   }
 
   .callout__title {
     @extend .title-6;
+    color: #444;
     font-size: size(10);
+    font-weight: 200;
     line-height: 60px;
     margin-bottom: spacing(2);
-    font-weight: 200;
-    color: #444;
+
+    @media (max-width: 800px){
+      font-size: 45px;
+    }
   }
   .callout__body {
-    position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
     background: rgba(#fff, 0.8);
+    bottom:0;
+    left:0;
     padding: spacing(3);
+    position: absolute;
     text-align: center;
-    width: 220px;
+    top:0;
 
     strong {
       color: #444;
