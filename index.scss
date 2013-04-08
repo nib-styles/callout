@@ -136,29 +136,60 @@
   @include border-box;
   background: $dark-grey;
   border-radius: 10px;
-  display: block;
   color: #fff;
-  .icon-money-back {
-    margin-top: -14px;
-    margin-left: 0;
-    margin-bottom: -14px;
-    margin-right: spacing(1);
-    float: left;
+  display: block;
+  padding: 0 150px 0 120px;
+  position: relative;
+
+  .callout__icon {
+    left: 0;
+    position: absolute;
+    top: -14px;
   }
+
   .callout__body {
     @include improve-text-rendering;
-    overflow: hidden;
     line-height: 20px;
     margin: spacing(2) 0;
-    max-height: baseline(2);
   }
+
   .callout__body a {
     color: #fff;
     text-decoration: none;
   }
   .callout__action {
-    float: right;
-    margin: 24px spacing(2) 24px spacing(1);
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  @media (max-width: 480px) {
+    border-radius: 0;
+    margin: 40px -20px 0;
+    padding: 50px 80px 60px;
+    top: 40px;
+
+    .callout__icon {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      top: -50px;
+    }
+
+    .callout__body {
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .callout__action {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: 30px;
+      left: 50%;
+      right: auto;
+      top: auto;
+    }
   }
 }
 
