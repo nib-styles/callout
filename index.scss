@@ -94,9 +94,7 @@
   border-top-color: #add09c;
   color: #fff;
   display: block;
-  margin-top: 50px;
   padding: spacing(2);
-
   .no-rgba & {
     border: 0;
     border-top: 1px solid #fff;
@@ -105,10 +103,6 @@
   .callout__title {
     font-size: size(3);
     color: #fff;
-  }
-
-  @media (max-width: 640px) {
-    margin: 0 0 20px 0;
   }
 }
 
@@ -145,7 +139,6 @@
   color: #fff;
   display: block;
   padding: 0 150px 0 120px;
-  margin: 40px 0;
   position: relative;
 
   .callout__icon {
@@ -173,9 +166,9 @@
 
   @media (max-width: 480px) {
     border-radius: 0;
-    margin: 80px -20px 0;
+    margin: 40px -20px 0;
     padding: 50px 80px 60px;
-    top: auto;
+    top: 40px;
 
     .callout__icon {
       -webkit-transform: translateX(-50%);
@@ -199,7 +192,6 @@
     }
   }
 }
-
 
 // Callout used for banners on product pages
 // 
