@@ -138,11 +138,11 @@
   border-radius: 10px;
   color: #fff;
   display: block;
-  padding: 0 150px 0 120px;
+  padding: 0 140px 0 110px;
   position: relative;
 
   .callout__icon {
-    left: 0;
+    left: -5px;
     position: absolute;
     top: -14px;
   }
@@ -199,15 +199,22 @@
 // Callout used for banners on product pages
 // 
 // Styleguide 4.1.6
+// 
 
 .callout-7 {
   @include border-box;
   display: block;
   margin: 0 auto;
+  position: relative;
+  width: auto;
 
   &.callout--phi {
     background-position: top right;
-    @include retina-background-image(callout-image-path('phi-banner'), 'jpg', auto, 400px);
+    height: auto;
+
+    @media (min-width: 641px){
+      @include retina-background-image(callout-image-path('phi-banner'), 'jpg', auto, 400px);
+    }
 
     @media (max-width: 640px){
       @include retina-background-image(callout-image-path('phi-banner-640'), 'jpg', auto, 400px);
@@ -225,11 +232,13 @@
     font-weight: 200;
     line-height: 60px;
     margin-bottom: spacing(2);
+    text-wrap:none;
 
     @media (max-width: 800px){
-      font-size: 45px;
+      font-size: 42px;
     }
   }
+
   .callout__body {
     background: rgba(#fff, 0.8);
     padding: spacing(3);
