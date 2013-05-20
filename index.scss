@@ -149,8 +149,8 @@
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
 
-    .no-csstransforms & {
-      top: -14px;
+    .no-csstransforms &  {
+      top: -14px; 
     }
   }
 
