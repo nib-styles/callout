@@ -144,7 +144,10 @@
   .callout__icon {
     left: -5px;
     position: absolute;
-    top: -14px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 
   .callout__body {
@@ -177,9 +180,6 @@
     padding: 50px 80px 60px;
 
     .callout__icon {
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      transform: translateX(-50%);
       left: 50%;
       top: -50px;
     }
