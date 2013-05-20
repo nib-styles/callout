@@ -166,6 +166,11 @@
 
   @media (max-width: 800px) {
     border-radius: 0;
+    padding: 0 140px 0 180px;
+
+    .callout__icon {
+      left: 60px;
+    }
   }
 
   @media (max-width: 640px) {
