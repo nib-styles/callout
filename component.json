@@ -1,7 +1,7 @@
 {
   "name": "callback",
   "main": "index.scss",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "dependencies": {
   },
   "styles": ["index.scss"],
@@ -12,6 +12,6 @@
     "images/phi-banner.jpg",
     "images/phi-banner-640.jpg",
     "images/phi-banner@2x.jpg",
-    "images/white-80.png" 
+    "images/white-80.png"
   ]
 }
