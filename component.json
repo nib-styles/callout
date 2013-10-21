@@ -1,11 +1,9 @@
 {
   "name": "callback",
-  "main": "index.scss",
-  "version": "0.1.7",
-  "dependencies": {
-  },
-  "styles": ["index.scss"],
-  "files": [
+  "version": "0.2.0",
+  "dependencies": {},
+  "styles": ["index.css"],
+  "images": [
     "images/bg-rounded-square-pointer.png",
     "images/bg-rounded-square-pointer@2x.png",
     "images/icon-tick-circle-large-blue.png",
